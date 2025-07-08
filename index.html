@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="src/styles/styles.css">
+
+  <title>Kanban</title>
+</head>
+
+<body>
+  <main class="kanban">
+    <!-- Coluna 1 -->
+    <div class="kanban-column" data-id="1">
+      <div class="kanban-title">
+        <h2>
+          Pendente
+        </h2>
+
+        <button class="add-card" onclick="displayModal();">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="kanban-cards">
+        <div class="kanban-card" draggable="true">
+          <div class="badge medium">
+            <span>
+              A fazer
+            </span>
+          </div>
+
+          <p class="card-title">
+            Revisar documento do projeto
+          </p>
+
+          <div class="card-infos">
+            <div class="card-icons">
+              <p>
+                <i class="fa-regular fa-comment"></i>
+                1
+              </p>
+
+              <p>
+                <i class="fa-solid fa-paperclip"></i>
+                1
+              </p>
+            </div>
+
+            <div class="user">
+              <img src="src/images/avatar.png" alt="Avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna 2 -->
+    <div class="kanban-column" data-id="2">
+      <div class="kanban-title">
+        <h2>
+          Em progresso
+        </h2>
+
+        <button class="add-card" onclick="displayModal();">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="kanban-cards">
+        <div class="kanban-card" draggable="true">
+          <div class="badge low">
+            <span>
+              Alta prioridade
+            </span>
+          </div>
+
+          <p class="card-title">
+            Revisar documento do projeto
+          </p>
+
+          <div class="card-infos">
+            <div class="card-icons">
+              <p>
+                <i class="fa-regular fa-comment"></i>
+                1
+              </p>
+
+              <p>
+                <i class="fa-solid fa-paperclip"></i>
+                1
+              </p>
+            </div>
+
+            <div class="user">
+              <img src="src/images/avatar2.png" alt="Avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna 3 -->
+    <div class="kanban-column" data-id="3">
+      <div class="kanban-title">
+        <h2>
+          Concluído
+        </h2>
+
+        <button class="add-card" onclick="displayModal();">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="kanban-cards">
+        <div class="kanban-card" draggable="true">
+          <div class="badge high">
+            <span>
+              Alta prioridade
+            </span>
+          </div>
+
+          <p class="card-title">
+            Revisar documento do projeto
+          </p>
+
+          <div class="card-infos">
+            <div class="card-icons">
+              <p>
+                <i class="fa-regular fa-comment"></i>
+                1
+              </p>
+
+              <p>
+                <i class="fa-solid fa-paperclip"></i>
+                1
+              </p>
+            </div>
+
+            <div class="user">
+              <img src="src/images/avatar3.png" alt="Avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna 4 -->
+    <div class="kanban-column" data-id="4">
+      <div class="kanban-title">
+        <h2>
+          Revisão
+        </h2>
+
+        <button class="add-card" onclick="displayModal();">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="kanban-cards">
+        <div class="kanban-card" draggable="true">
+          <div class="badge high">
+            <span>
+              Alta prioridade
+            </span>
+          </div>
+
+          <p class="card-title">
+            Revisar documento do projeto
+          </p>
+
+          <div class="card-infos">
+            <div class="card-icons">
+              <p>
+                <i class="fa-regular fa-comment"></i>
+                1
+              </p>
+
+              <p>
+                <i class="fa-solid fa-paperclip"></i>
+                1
+              </p>
+            </div>
+
+            <div class="user">
+              <img src="src/images/avatar3.png" alt="Avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="src/scripts/kanban.js"></script>
+</body>
+
+</html>
